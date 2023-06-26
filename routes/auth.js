@@ -124,8 +124,8 @@ router.post('/getuser', fetchuser, async (req, res) => {
       // if (mm < 10) mm = '0' + mm;
 
       // const date = yyyy + '-' + mm + '-' + dd;
-      // console.log(/^date/)
-      // const income = await Transaction.find({$and:[{user: user._id},{date:{$regex:/^date/}},{isIncome:true}]})
+      // // console.log(/^date/)
+      // const income = await Transaction.find({$and:[{user: user._id},{date: ISODate(date)},{isIncome:true}]})
       // console.log(income)
       
     }

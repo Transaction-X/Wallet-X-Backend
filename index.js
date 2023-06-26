@@ -16,6 +16,9 @@ async function main() {
     await mongoose.connect('mongodb://127.0.0.1:27017/WalletX');
     console.log("we are connected")
 }
+app.get("/",(req,res)=> {
+    res.send("Backend working lol")
+})
 app.listen(port,()=> {
     console.log(`Server running succesfully at http://localhost:${port}/`)
 })

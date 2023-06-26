@@ -13,7 +13,9 @@ app.use('/api/transaction',require('./routes/transaction'))
 main().catch(err => console.log(err));
 
 async function main() {
+    mongoose.set("strictQuery", false);
     await mongoose.connect('mongodb://127.0.0.1:27017/WalletX');
+
     console.log("we are connected")
 }
 app.get("/",(req,res)=> {

@@ -14,7 +14,7 @@ main().catch(err => console.log(err));
 
 async function main() {
     mongoose.set("strictQuery", false);
-    await mongoose.connect('mongodb://127.0.0.1:27017/WalletX');
+    await mongoose.connect('mongodb+srv://apurbaKoley:8oqrAjOaOPdbumcG@cluster0.1ykbjea.mongodb.net/WalletX');
 
     console.log("we are connected")
 }

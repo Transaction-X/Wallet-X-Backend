@@ -21,6 +21,9 @@ async function main() {
 app.get("/",(req,res)=> {
     res.send("Backend working lol")
 })
+app.get('test',(req,res)=> {
+    res.send("deployment test working")
+})
 app.listen(port,()=> {
     console.log(`Server running succesfully at http://localhost:${port}/`)
 })

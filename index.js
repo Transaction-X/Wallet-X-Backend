@@ -25,6 +25,6 @@ app.get('/test',(req,res)=> {
     res.send("deployment test working")
 })
 app.listen(port,()=> {
-    console.log(`Server running succesfully at http://localhost:${port}/`)
+    console.log(`Server running succesfully at https://wallet-x-backend.vercel.app/`)
 })
 module.exports = app
